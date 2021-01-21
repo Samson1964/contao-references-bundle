@@ -33,7 +33,6 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['referenzen'] = array
 				'eval'                  => array
 				(	
 					'style'             => 'width: 20px',
-					'valign'            => 'top'
 				)
 			),
 			'text' => array
@@ -43,8 +42,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['referenzen'] = array
 				'inputType'             => 'text',
 				'eval'                  => array
 				(
-					'style'             => 'width: 220px',
-					'valign'            => 'top',
+					'style'             => 'width:90%',
 					'allowHtml'         => true
 				)
 			),
@@ -57,8 +55,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['referenzen'] = array
 				(
 					'rgxp'              => 'url',
 					'tl_class'          => 'wizard',
-					'style'             => 'width: 220px',
-					'valign'            => 'top'
+					'style'             => 'width:90%',
 				),
 				'wizard' => array
 				(
@@ -73,7 +70,6 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['referenzen'] = array
 				'eval'                  => array
 				(	
 					'style'             => 'width: 20px',
-					'valign'            => 'top'
 				)
 			),
 		)

@@ -17,4 +17,4 @@
  * CONTENT ELEMENTS
  * -------------------------------------------------------------------------
  */
-$GLOBALS['TL_CTE']['texts']['references'] = 'Samson\References\Reference';
+$GLOBALS['TL_CTE']['texts']['references'] = 'Schachbulle\ContaoReferencesBundle\ContentElements\Reference';

@@ -1,11 +1,12 @@
 <?php
-	$GLOBALS['TL_CSS']['references'] = 'system/modules/references/assets/css/default.css';
+	$GLOBALS['TL_CSS']['references'] = 'bundles/contaoreferences/css/default.css';
 ?>
 
 <?php $this->extend('block_searchable'); ?>
 
 <?php $this->block('content'); ?>
 
+<div>
 <ul>
 <?php foreach ($this->references as $item): ?>
 	<?php if(count($this->references) > 1): ?>
@@ -15,5 +16,6 @@
 	<?php endif; ?>
 <?php endforeach; ?>
 </ul>
+</div>
 
 <?php $this->endblock(); ?> 

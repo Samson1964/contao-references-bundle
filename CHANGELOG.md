@@ -1,5 +1,9 @@
 # References Changelog
 
+## Version 2.0.1 (2021-01-21)
+
+* Fix: Änderungen CSS, Backend-Layout
+
 ## Version 2.0.0 (2021-01-21)
 
 * Umbau auf Contao 4
