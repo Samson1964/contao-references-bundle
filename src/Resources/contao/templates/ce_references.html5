@@ -1,0 +1,19 @@
+<?php
+	$GLOBALS['TL_CSS']['references'] = 'system/modules/references/assets/css/default.css';
+?>
+
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<ul>
+<?php foreach ($this->references as $item): ?>
+	<?php if(count($this->references) > 1): ?>
+		<li>[<?= $item['nummer'] ?>] <?= $item['text'] ?></li>
+	<?php else: ?>
+		<li><?= $item['text'] ?></li>
+	<?php endif; ?>
+<?php endforeach; ?>
+</ul>
+
+<?php $this->endblock(); ?> 

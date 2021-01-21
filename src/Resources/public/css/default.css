@@ -1,0 +1,29 @@
+.ce_references
+{
+	margin-bottom: 10px;
+	display      : flex;
+}
+
+.ce_references h1, .ce_references h2, .ce_references h3, .ce_references h4, .ce_references h5, .ce_references h6
+{
+	font-size    : 14px;
+	font-weight  : bold;
+	margin-bottom: 3px;
+	padding-top  : 4px;
+}
+
+.ce_references h1:after, .ce_references h2:after, .ce_references h3:after, .ce_references h4:after, .ce_references h5:after, .ce_references h6:after
+{
+	content      : ':';
+}
+
+.ce_references ul
+{
+	list-style-type: square;
+}
+
+.ce_references li
+{
+	font-style   : italic;
+	color        : #6E6E6E;
+}
