@@ -12,17 +12,31 @@
  * @filesource
  */
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['references'] = '{type_legend},type,headline;{options_legend},referenzen;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['references'] = '{type_legend},type,headline;{options_legend},referenzen_headline,referenzen;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop';
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['referenzen_headline'] = array
+(
+	'exclude'                 => true,
+	'filter'                  => true,
+	'inputType'               => 'checkbox',
+	'default'                 => 1,
+	'eval'                    => array
+	(
+		'tl_class'            => 'w50'
+	),
+	'sql'                     => "char(1) NOT NULL default '1'"
+);
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['referenzen'] = array
 (
-	'label'                 => &$GLOBALS['TL_LANG']['tl_content']['references'],
-	'exclude'               => true,
-	'inputType'             => 'multiColumnWizard',
-	'eval'                  => array
+	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['references'],
+	'exclude'                 => true,
+	'inputType'               => 'multiColumnWizard',
+	'eval'                    => array
 	(
-		'buttonPos'         => 'top',
-		'columnFields' 		=> array
+		'tl_class'            => 'clr',
+		'buttonPos'           => 'top',
+		'columnFields'        => array
 		(
 			'active' => array
 			(

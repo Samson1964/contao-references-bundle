@@ -1,8 +1,13 @@
 # References Changelog
 
+## Version 2.1.0 (2021-03-16)
+
+* Add: Checkbox (default = true) für Standardüberschrift
+* Add: customTpl inkl. Standardpalette aus Contao 4
+
 ## Version 2.0.1 (2021-01-21)
 
-* Fix: �nderungen CSS, Backend-Layout
+* Fix: Änderungen CSS, Backend-Layout
 
 ## Version 2.0.0 (2021-01-21)
 

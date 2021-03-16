@@ -6,7 +6,6 @@
 
 <?php $this->block('content'); ?>
 
-<div>
 <ul>
 <?php foreach ($this->references as $item): ?>
 	<?php if(count($this->references) > 1): ?>
@@ -16,6 +15,5 @@
 	<?php endif; ?>
 <?php endforeach; ?>
 </ul>
-</div>
 
 <?php $this->endblock(); ?> 
