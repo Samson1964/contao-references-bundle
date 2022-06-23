@@ -48,12 +48,13 @@ class Reference extends \ContentElement
 				$daten[] = array
 				(
 					'nummer' => $i,
-					'text'   => $item['url'] ? '<a href="'.$item['url'].'"'.($item['target'] ? ' target="_blank"' : '').'>'.$item['text'].'</a>' : $item['text']
+					'text'   => $item['url'] ? '<a href="'.$item['url'].'"'.($item['target'] ? ' target="_blank"' : '').'>'.($item['text'] ? $item['text'] : $item['url']).'</a>' : $item['text']
 				);
 			}
 		}
 
 		$this->Template->references = $daten;
-		$this->Template->headline = $this->referenzen_headline ? ($i == 1 ? $GLOBALS['TL_LANG']['tl_content']['references_headline_singular'] :  $GLOBALS['TL_LANG']['tl_content']['references_headline_plural']) : $this->headline;
+		$this->Template->references_count = count($daten);
+		if($daten && $this->referenzen_headline) $this->Template->headline = $this->referenzen_headline ? ($i == 1 ? $GLOBALS['TL_LANG']['tl_content']['references_headline_singular'] :  $GLOBALS['TL_LANG']['tl_content']['references_headline_plural']) : $this->headline;
 	}
 }

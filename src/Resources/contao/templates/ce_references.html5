@@ -6,14 +6,16 @@
 
 <?php $this->block('content'); ?>
 
-<ul>
-<?php foreach ($this->references as $item): ?>
-	<?php if(count($this->references) > 1): ?>
-		<li>[<?= $item['nummer'] ?>] <?= $item['text'] ?></li>
-	<?php else: ?>
-		<li><?= $item['text'] ?></li>
-	<?php endif; ?>
-<?php endforeach; ?>
-</ul>
+<?php if($this->references): ?>
+	<ul>
+	<?php foreach ($this->references as $item): ?>
+		<?php if($this->references_count > 1): ?>
+			<li>[<?= $item['nummer'] ?>] <?= $item['text'] ?></li>
+		<?php else: ?>
+			<li><?= $item['text'] ?></li>
+		<?php endif; ?>
+	<?php endforeach; ?>
+	</ul>
+<?php endif; ?>
 
 <?php $this->endblock(); ?> 

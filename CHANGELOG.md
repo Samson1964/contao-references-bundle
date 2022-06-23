@@ -1,5 +1,11 @@
 # References Changelog
 
+## Version 2.1.1 (2022-06-23)
+
+* Fix: URL ohne Text ist ohne Ausgabe -> wenn kein Text vorhanden ist, wird die URL ausgegeben
+* Add: Template-Variable references_count für Anzahl der Einträge
+* Fix: Ausgabe im Template nur, wenn Daten vorhanden sind
+
 ## Version 2.1.0 (2021-03-16)
 
 * Add: Checkbox (default = true) für Standardüberschrift
