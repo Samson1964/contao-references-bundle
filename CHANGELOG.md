@@ -1,5 +1,9 @@
 # References Changelog
 
+## Version 2.1.2 (2023-11-24)
+
+* Fix: Standardüberschrift wurde immer noch nicht ausgegeben -> falsche Sprachdatei, richtig ist default statt tl_content
+
 ## Version 2.1.1 (2022-06-23)
 
 * Fix: URL ohne Text ist ohne Ausgabe -> wenn kein Text vorhanden ist, wird die URL ausgegeben
