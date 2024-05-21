@@ -1,5 +1,9 @@
 # References Changelog
 
+## Version 3.0.0 (2024-05-21)
+
+* Add: PHP8-Unterstützung
+
 ## Version 2.1.2 (2023-11-24)
 
 * Fix: Standardüberschrift wurde immer noch nicht ausgegeben -> falsche Sprachdatei, richtig ist default statt tl_content
