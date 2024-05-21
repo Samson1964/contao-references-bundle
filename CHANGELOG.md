@@ -1,5 +1,9 @@
 # References Changelog
 
+## Version 3.0.1 (2024-05-21)
+
+* Change: README
+
 ## Version 3.0.0 (2024-05-21)
 
 * Add: PHP8-Unterstützung

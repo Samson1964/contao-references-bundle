@@ -1,6 +1,7 @@
-References
-==========
+# Quellenachweise für Contao
 
-Stellt ein Inhaltselement für einen Quellennachweis zur Verfügung.
+Diese Erweiterung stellt ein Inhaltselement für einen Quellennachweis zur Verfügung.
 
-* Frank Hoppe
+## Entwickler ##
+
+**Frank Hoppe**
